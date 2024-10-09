@@ -58,3 +58,10 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+# CMSs
+extensions:
+  decap_cms:
+    branch: main
+#     publish_mode: editorial_workflow
+#     local_backend: true
