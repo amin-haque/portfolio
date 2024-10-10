@@ -1,8 +1,16 @@
+github.com/HugoBlox/hugo-blox-builder/modules/blox-analytics v0.1.2 h1:MUy48hWGsmL9bo3KpEKXIcNE8ajo6RuMmR7PnICLRDo=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-analytics v0.1.2/go.mod h1:0YQtVvRLCzZOpPmbVNk7WDx8t19/QfRTFO+pwyqQNk8=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms v0.1.1 h1:S1XFRPGzdlmrmqRcE9t0cj9auYFz7+TNCvsuxtD3wQQ=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms v0.1.1/go.mod h1:Njlsj3S1Z833TdX1nacJZzsiwGGhOq4Nilzo2BH/wQ8=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20231209203044-d31adfedd40b h1:rAluI3a9m5ZoJY5xTF7YcgA4YTJLsvPTEh6sVQhPb+o=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20231209203044-d31adfedd40b/go.mod h1:C7jfxMLv1bEUqbM9XDSmEpfOpS8w06OgqNDEcbuRgL4=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20241006005725-33edab58829a h1:8m0mpmJnVPO2QwOr52FDOj006HuB0ToQ65pphjRqY00=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.1.2-0.20241006005725-33edab58829a/go.mod h1:C7jfxMLv1bEUqbM9XDSmEpfOpS8w06OgqNDEcbuRgL4=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20240602133901-492e343c2a33 h1:x348mgyKtNQKGROIZ/A0WYbKitzD5ySaWWny0C8wF9U=
 github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20240602133901-492e343c2a33/go.mod h1:+qBbqXbKT7M2nOeHQa5OrRXwQKpEx1RXpMGirHbT7HU=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20241006005725-33edab58829a h1:tuXcUibt3PLFqE9VBpXkiETMimZ6uYyhgs1ZRKUkUf8=
+github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.2.1-0.20241006005725-33edab58829a/go.mod h1:+qBbqXbKT7M2nOeHQa5OrRXwQKpEx1RXpMGirHbT7HU=
 github.com/ahmed-hossain/custom-blox v0.0.0-20240912200546-d9b3f7d93db2 h1:msnwx9IsWzjfux7Ofmd3WU9pq/+aEbk4MTTcAkNl6pM=
 github.com/ahmed-hossain/custom-blox v0.0.0-20240912200546-d9b3f7d93db2/go.mod h1:w7EqeSEsq+ZaUY5Y+87mOoXlYoXCyLSpGZMt3va+DlQ=
+github.com/ahmed-hossain/custom-blox v0.0.0-20241010000505-6b522bd82d08 h1:zzRYivPcex0F9vHfORMNhl0q7/FOK/aP/aaE3jWTDjc=
+github.com/ahmed-hossain/custom-blox v0.0.0-20241010000505-6b522bd82d08/go.mod h1:w7EqeSEsq+ZaUY5Y+87mOoXlYoXCyLSpGZMt3va+DlQ=
