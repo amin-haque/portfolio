@@ -1,6 +1,6 @@
 module github.com/HugoBlox/hugo-blox-builder/starters/academic-cv
 
-replace github.com/ahmed-hossain/custom-blox => "D:/OneDrive - BUET/Grad_School_Applicaiton/Personal Website/custom-blox"
+//replace github.com/ahmed-hossain/custom-blox => "D:/OneDrive - BUET/Grad_School_Applicaiton/Personal Website/custom-blox"
 
 go 1.19
 
