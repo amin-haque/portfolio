@@ -12,5 +12,5 @@ require (
 require (
 	github.com/HugoBlox/hugo-blox-builder/modules/blox-analytics v0.1.2 // indirect
 	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms v0.1.1 // indirect
-	github.com/ahmed-hossain/custom-blox v0.0.0-20241011052002-bc16ab5da37b // indirect
+	github.com/ahmed-hossain/custom-blox v0.0.0-20241011232411-0c449c9327a4 // indirect
 )

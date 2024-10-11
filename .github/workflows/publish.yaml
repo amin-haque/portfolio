@@ -46,6 +46,7 @@ jobs:
       run: |
         npm install -g pnpm
         hugo
+        hugo mod get -u
         hugo mod vendor
         cd ./_vendor/github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind/
         pnpm i
