@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "6 rem"
+  spacing: "0rem"
 
 sections:
   - block: intro
@@ -16,7 +16,7 @@ sections:
       text: ""
       # Show a call-to-action button under your biography? (optional)
       button:
-        text: Download CV
+        text: DOWNLOAD MY CV
         url: uploads/resume_10-10-2024.pdf
     design:
       css_class: light
@@ -32,7 +32,7 @@ sections:
         #   parallax: false
   - block: markdown
     content:
-      title: '📚 My Research'
+      title: 'My Research'
       subtitle: ''
       text: |-
         Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
