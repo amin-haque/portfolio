@@ -1,17 +1,17 @@
 ---
 # Display name
-title: 吳健雄
+title: Chowdhury Ahmed Hossain
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+# name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Chowdhury Ahmed
+last_name: Hossain
 
 # Status emoji
-status:
-  icon: ☕️
+# status:
+#   icon: ☕️
 
 # Is this the primary user of the site?
 superuser: true
@@ -20,42 +20,44 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Prospective PhD Student - Fall 2025
 
 # Organizations/Affiliations to display in Biography blox
-organizations:
-  - name: OpenAI
-    url: https://openai.com/
+# organizations:
+#   - name: OpenAI
+#     url: https://openai.com/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
-  - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+  - icon: hero/envelope
+    url: 'mailto:ahmedhossain.buet@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+  # - icon: brands/x
+  #   url: https://twitter.com/GetResearchDev
+  # - icon: brands/instagram
+  #   url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/ahmed-hossain
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://www.linkedin.com/chowhury-ahmed
+  # - icon: academicons/google-scholar
+  #   url: https://scholar.google.com/
+  # - icon: academicons/orcid
+  #   url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Material Behavior
+  - Computational Mechanics
+  - Additive Manufacturing
+  - Machine Learning
+  - Advanced Materials
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: BSc. in Mechanical Engingieering
+    institution: Bangladesh University of Engineering and Technology
+    date_start: 2019-04-29
+    date_end: 2024-07-01
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
@@ -183,4 +185,6 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am Chowdhury Ahmed Hossain, a recent Mechanical Engineering graduate from the Bangladesh University of Engineering and Technology (BUET). Driven by curiosity and a love for solving problems, I have worked on numerous mechanical design and research projects, becoming proficient in various design and analysis software, experimental and simulation techniques, and developing a strong programming background. I thrive on learning new things, whether it's understanding an academic concept or picking up a new language. When I'm not doing any of these, you may find me roaming the streets, watching anime, or playing video games.
+
+Currently, I'm looking for PhD opportunities for fall 2025, focusing on **Material Behavior**, **Computational Mechanics**, **Advanced Materials**, and **Additive Manufacturing**. My goal is to develop novel materials with tailored properties to tackle complex engineering challenges. I am particularly interested in integrating experimental methods with computational modeling to better understand material behavior and improve material design.

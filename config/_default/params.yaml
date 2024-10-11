@@ -5,8 +5,8 @@
 
 # Appearance
 appearance:
-  mode: system
-  color: emerald
+  mode: light
+  color: red
 
 # SEO
 marketing:
@@ -33,9 +33,9 @@ header:
     blox: "navbar"
     fixed_to_top: true
     show_search: true
-    show_theme_chooser: true
+    show_theme_chooser: false
     logo:
-      text: "Your Name"
+      text: "Chowdhury Ahmed Hossain"
 
 # Site footer
 footer:
@@ -58,6 +58,8 @@ features:
     enable: true
   privacy_pack:
     enable: false
+  avater:
+    shape: circle
 
 # CMSs
 extensions:
