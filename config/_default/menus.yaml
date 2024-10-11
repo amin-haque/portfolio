@@ -7,21 +7,21 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Education
-    url: education/
+  - name: Academics
+    url: academics/
     weight: 11
   - name: Research
     url: research/
     weight: 12
-  - name: Experience
-    url: experience/
-    weight: 13
   - name: Projects
     url: projects/
+    weight: 13
+  - name: Skills & Certifications
+    url: skills/
+    weight: 14
+  - name: Experience
+    url: experience/
     weight: 20
-  # - name: News
-  #   url: /#news
-  #   weight: 30
-  # - name: Teaching
-  #   url: teaching/
-  #   weight: 40
+  - name: Awards and honors
+    url: awards/
+    weight: 30

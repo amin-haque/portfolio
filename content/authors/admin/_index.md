@@ -56,35 +56,53 @@ interests:
 education:
   - area: BSc. in Mechanical Engingieering
     institution: Bangladesh University of Engineering and Technology
+    uni_url: https://buet.ac.bd
+    logo: buet.png
     date_start: 2019-04-29
     date_end: 2024-07-01
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
+      GPA: 3.48/4.0
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Relevant Coursework:
+      - Composite Materials
+      - Bioengineering
+      - Engineering Mechanics
+      - Mechanics of Solids
+      - Metalic Materials
+      - Mechanics of Machineries
+      - Electro Mechanical System Design
+      - Heat Transfer Equipment Design
+      - Numerical Analysis
+      - Production Processes
+      - Machine Tools
+    button:
+      url: /uploads/transcript.pdf
+      text: View Transcript
+
+test_scores:
+  - exam: Graduate Record Exam (GRE)
+    url: https://ets.org
+    logo: gre.png
+    date: 2024-09-16
+    score: |
+      - Overall Score: 331/340
+      - Quantitative Reasoning: 168/170
+      - Verbal Reasoning: 163/170
+      - Analytical Writing: 3.5/6
+    button:
+      url: /uploads/gre_score.pdf
+      text: View Score Report
+  # - exam: International English Language Testing Service (IELTS)
+  #   url: https://ielts.org
+  #   logo: ielts.png
+  #   date: 2024-10-26
+  #   score: |
+  #     - Band: 7.5/9
+  #     - Listening: 8.5/9
+  #     - Reading: 8/9
+  #     - Writing: 6.5/9
+  #     - Speaking: 6.5/9
+
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
@@ -185,6 +203,6 @@ awards:
 
 ## About Me
 
-I am Chowdhury Ahmed Hossain, a recent Mechanical Engineering graduate from the Bangladesh University of Engineering and Technology (BUET). Driven by curiosity and a love for solving problems, I have worked on numerous mechanical design and research projects, becoming proficient in various design and analysis software, experimental and simulation techniques, and developing a strong programming background. I thrive on learning new things, whether it's understanding an academic concept or picking up a new language. When I'm not doing any of these, you may find me roaming the streets, watching anime, or playing video games.
+I am a recent Mechanical Engineering graduate from the Bangladesh University of Engineering and Technology (BUET). Driven by curiosity and a love for solving problems, I have worked on numerous mechanical design and research projects, becoming proficient in various design and analysis software, experimental and simulation techniques, and developing a strong programming background. I thrive on learning new things, whether it's understanding an academic concept or picking up a new language. When I'm not doing any of these, you may find me roaming the streets, watching anime, or playing video games.
 
 Currently, I'm looking for PhD opportunities for fall 2025, focusing on **Material Behavior**, **Computational Mechanics**, **Advanced Materials**, and **Additive Manufacturing**. My goal is to develop novel materials with tailored properties to tackle complex engineering challenges. I am particularly interested in integrating experimental methods with computational modeling to better understand material behavior and improve material design.
