@@ -25,6 +25,9 @@ jobs:
   build:
     if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
+    env:
+      TINA_PUBLIC_CLIENT_ID: dc4f2f3b-ea7c-4087-b9e3-12003454d61d
+      TINA_TOKEN: ba6f05b8477251b582c45f44e67748b7391b43c0
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -50,9 +53,6 @@ jobs:
           echo "MY_SECRET does not exist"
         fi
     - name: Build TinaCMS
-      env:
-        TINA_PUBLIC_CLIENT_ID: dc4f2f3b-ea7c-4087-b9e3-12003454d61d
-        TINA_TOKEN: ba6f05b8477251b582c45f44e67748b7391b43c0
       run: npm install -g pnpm && pnpm i && npx tinacms build
 
     - name: Run custom command
