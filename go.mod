@@ -1,6 +1,6 @@
 module github.com/HugoBlox/hugo-blox-builder/starters/academic-cv
 
-//replace github.com/ahmed-hossain/custom-blox => "D:/OneDrive - BUET/Grad_School_Applicaiton/Personal Website/custom-blox"
+replace github.com/ahmed-hossain/custom-blox => "D:/OneDrive - BUET/Grad_School_Applicaiton/Personal Website/custom-blox"
 
 go 1.19
 
@@ -12,5 +12,5 @@ require (
 require (
 	github.com/HugoBlox/hugo-blox-builder/modules/blox-analytics v0.1.2 // indirect
 	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms v0.1.1 // indirect
-	github.com/ahmed-hossain/custom-blox v0.0.0-20241011232411-0c449c9327a4 // indirect
+	github.com/ahmed-hossain/custom-blox v0.0.0-20241012024622-db3b56945ceb // indirect
 )
