@@ -44,8 +44,8 @@ jobs:
           ${{ runner.os }}-hugomod-
     - name: Build TinaCMS
       env:
-        TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
-        TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+        TINA_PUBLIC_CLIENT_ID: ${{ env.TINA_PUBLIC_CLIENT_ID }}
+        TINA_TOKEN: ${{ env.TINA_TOKEN }}
       run: npm install -g pnpm && pnpm i && npx tinacms build
     - name: Run custom command
       run: |
