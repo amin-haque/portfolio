@@ -47,6 +47,13 @@ jobs:
         TINA_PUBLIC_CLIENT_ID: dc4f2f3b-ea7c-4087-b9e3-12003454d61d
         TINA_TOKEN: ba6f05b8477251b582c45f44e67748b7391b43c0
       run: npm install -g pnpm && pnpm i && npx tinacms build
+    - name: Check Environment Secret
+      run: |
+        if [ -z "${{ secrets.TINA_TOKEN }}" ]; then
+          echo "MY_SECRET is empty"
+        else
+          echo "MY_SECRET is set"
+        fi
     - name: Run custom command
       run: |
         echo 'Hi ${{ env.TINA_TOKEN }}'
