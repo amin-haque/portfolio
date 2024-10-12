@@ -60,10 +60,9 @@ education:
     logo: buet.png
     date_start: 2019-04-29
     date_end: 2024-07-01
+    cgpa: 3.48/4.0
     summary: |
-      GPA: 3.48/4.0
-
-      Relevant Coursework:
+      ## Relevant Coursework:
       - Composite Materials
       - Bioengineering
       - Engineering Mechanics
