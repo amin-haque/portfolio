@@ -44,7 +44,7 @@ jobs:
           ${{ runner.os }}-hugomod-
     - name: Check Environment Secret
       run: |
-        if [ -v MY_SECRET ]; then
+        if [ -v ${{ secrets.MY_SECRET }} ]; then
         echo "MY_SECRET exists"
         else
           echo "MY_SECRET does not exist"
