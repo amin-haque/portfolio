@@ -72,6 +72,7 @@ education:
       - Electro Mechanical System Design
       - Heat Transfer Equipment Design
       - Numerical Analysis
+      - Machine Design
       - Production Processes
       - Machine Tools
     button:
@@ -202,6 +203,6 @@ awards:
 
 ## About Me
 
-I am a recent Mechanical Engineering graduate from the Bangladesh University of Engineering and Technology (BUET). Driven by curiosity and a love for solving problems, I have worked on numerous mechanical design and research projects, becoming proficient in various design and analysis software, experimental and simulation techniques, and developing a strong programming background. I thrive on learning new things, whether it's understanding an academic concept or picking up a new language. When I'm not doing any of these, you may find me roaming the streets, watching anime, or playing video games.
+I am a recent Mechanical Engineering graduate from the Bangladesh University of Engineering and Technology (BUET). Driven by curiosity and a love for solving problems, I have worked on a number of mechanical design and research projects, becoming proficient in various design and analysis software, experimental and simulation techniques, and developing a strong programming background. I always love to learn about new stuffs, whether it's understanding an academic concept or picking up a new language. When I'm not doing so, you may find me roaming the streets, watching anime, or playing video games.
 
-Currently, I'm looking for PhD opportunities for fall 2025, focusing on **Material Behavior**, **Computational Mechanics**, **Advanced Materials**, and **Additive Manufacturing**. My goal is to develop novel materials with tailored properties to tackle complex engineering challenges. I am particularly interested in integrating experimental methods with computational modeling to better understand material behavior and improve material design.
+Currently, I'm looking for PhD opportunities for fall 2025, focusing on **Material Behavior**, **Computational Mechanics**, **Advanced Materials**, **Additive Manufacturing**, **Machine Learning** and other relevant topics. I am particularly interested in the research on advanced materials with tailored properties by integrated data-driven methods like machine-learning with traditional experimental and computational methods.
