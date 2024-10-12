@@ -44,10 +44,10 @@ jobs:
           ${{ runner.os }}-hugomod-
     - name: Check Environment Secret
       run: |
-        if [ -z "${{ secrets.MY_SE }}" ]; then
-          echo "MY_SECRET is empty"
+        if [ -v MY_SECRET ]; then
+        echo "MY_SECRET exists"
         else
-          echo "MY_SECRET is set"
+          echo "MY_SECRET does not exist"
         fi
     - name: Build TinaCMS
       env:
