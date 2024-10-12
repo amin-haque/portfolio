@@ -45,8 +45,8 @@ jobs:
     - name: Run custom command
       run: |
         npm install -g pnpm
+        tinacms build
         hugo
-        hugo mod get -u
         hugo mod vendor
         cd ./_vendor/github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind/
         pnpm i
