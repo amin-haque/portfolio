@@ -1,13 +1,14 @@
 ---
-title: Pandas
+title: Mechanized Gaussian Cannon with Head-Tracked Targeting System
+subtitle: Electromechanical System Design Term Project
 date: 2023-10-26
-# external_link: https://github.com/pandas-dev/pandas
 tags:
-  - Hugo
-  - Wowchemy
-  - Markdown
+  - Project
+  - Cad
+  - Design
+image:
+  filename: project_assembly.jpg
 ---
+- Improvised and developed multiple functional and synchronous mechanisms to mechanically and sequentially shoot, reload and reset a Gaussian cannon.
 
-Flexible and powerful data analysis / manipulation library for Python, providing labeled data structures.
-
-<!--more-->
+- Built a head-mounted tracking system consisting of an accelerometer, Arduino microcontroller and wireless RF modules to control a 2-DOF arm that imitates the user’s head movement.
