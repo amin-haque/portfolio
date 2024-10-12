@@ -28,6 +28,7 @@ jobs:
     env:
       TINA_PUBLIC_CLIENT_ID: dc4f2f3b-ea7c-4087-b9e3-12003454d61d
       TINA_TOKEN: ba6f05b8477251b582c45f44e67748b7391b43c0
+      MY_SECRET: ${{ secrets.MY_SECRET }}
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -47,10 +48,10 @@ jobs:
           ${{ runner.os }}-hugomod-
     - name: Check Environment Secret
       run: |
-        if [ -v ${{ secrets.MY_SECRET }} ]; then
-        echo "MY_SECRET exists"
+        if [ -z MY_SECRET ]; then
+          echo "MY_SECRET does not exist or is empty"
         else
-          echo "MY_SECRET does not exist"
+          echo "MY_SECRET exists and is set"
         fi
     - name: Build TinaCMS
       run: npm install -g pnpm && pnpm i && npx tinacms build
