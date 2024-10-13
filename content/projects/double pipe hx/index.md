@@ -1,4 +1,4 @@
 ---
-title: Demo Project
+title: Double Pipe Heat Exchanger
 ---
 
