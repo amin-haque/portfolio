@@ -25,6 +25,9 @@ jobs:
   build:
     if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
+    env:
+      NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_TINA_CLIENT_ID }}
+      TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -42,10 +45,14 @@ jobs:
         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
         restore-keys: |
           ${{ runner.os }}-hugomod-
+    - name: Check Environment Variable
+      run: |
+        if [ -z "${{ NEXT_PUBLIC_TINA_CLIENT_ID }}" ]; then
+          echo "MY_SECRET does not exist or is empty"
+        else
+          echo "MY_SECRET exists and is set"
+        fi
     - name: Build TinaCMS
-      env:
-          NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_TINA_CLIENT_ID }}
-          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
       run: npm install -g pnpm && pnpm i && npx tinacms build
     - name: Run custom command
       run: |
