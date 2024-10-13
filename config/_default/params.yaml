@@ -62,6 +62,8 @@ features:
     enable: false
   avater:
     shape: circle
+    # Avater size in px > if 250px by 250x input 250x250
+    size: '250x250'
 
 # CMSs
 extensions:
