@@ -46,10 +46,12 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-hugomod-
     - name: Build TinaCMS
-      env:
-        NEXT_PUBLIC_TINA_CLIENT_ID: ${{ ${NEXT_PUBLIC_TINA_CLIENT_ID} }}
-        TINA_TOKEN: ${{ ${TINA_TOKEN} }}
-      run: npm install -g pnpm && pnpm i && npx tinacms build
+      run: |
+        echo "NEXT_PUBLIC_TINA_CLIENT_ID: ${NEXT_PUBLIC_TINA_CLIENT_ID}"
+        echo "TINA_TOKEN: ${TINA_TOKEN}"
+        npm install -g pnpm
+        pnpm i
+        npx tinacms build
     - name: Run custom command
       run: |
         hugo
