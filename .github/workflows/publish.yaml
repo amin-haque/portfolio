@@ -25,9 +25,6 @@ jobs:
   build:
     if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
-    env:
-      NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_TINA_CLIENT_ID }}
-      TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -46,8 +43,10 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-hugomod-
     - name: Build TinaCMS
-      run: 
-        npm install -g pnpm && pnpm i && npx tinacms build
+      env:
+          NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_TINA_CLIENT_ID }}
+          TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+      run: npm install -g pnpm && pnpm i && npx tinacms build
     - name: Run custom command
       run: |
         hugo
