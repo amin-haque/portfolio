@@ -75,9 +75,9 @@ education:
       - Machine Design
       - Production Processes
       - Machine Tools
-    button:
-      url: /uploads/transcript.pdf
-      text: View Transcript
+    # button:
+    #   url: /uploads/transcript.pdf
+    #   text: View Transcript
 
 test_scores:
   - exam: Graduate Record Exam (GRE)
@@ -86,12 +86,12 @@ test_scores:
     date: 2024-09-16
     score: |
       - Overall Score: 331/340
-      - Quantitative Reasoning: 168/170
-      - Verbal Reasoning: 163/170
-      - Analytical Writing: 3.5/6
-    button:
-      url: /uploads/gre_score.pdf
-      text: View Score Report
+      - Quantitative Reasoning: 168/170 (82<sup>th</sup> percentile)
+      - Verbal Reasoning: 163/170 (91<sup>th</sup> percentile)
+      - Analytical Writing: 3.5/6 (42<sup>th</sup> percentile)
+    # button:
+    #   url: /uploads/gre_score.pdf
+    #   text: View Score Report
   # - exam: International English Language Testing Service (IELTS)
   #   url: https://ielts.org
   #   logo: ielts.png
@@ -219,8 +219,6 @@ awards:
       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
-## About Me
-
 I am a recent Mechanical Engineering graduate from the Bangladesh University of Engineering and Technology (BUET). Driven by curiosity and a love for solving problems, I have worked on a number of mechanical design and research projects, becoming proficient in various design and analysis software, experimental and simulation techniques, and developing a strong programming background. I always love to learn about new stuffs, whether it's understanding an academic concept or picking up a new language. When I'm not doing so, you may find me roaming the streets, watching anime, or playing video games.
 
-Currently, I'm looking for PhD opportunities for fall 2025, focusing on **Material Behavior**, **Computational Mechanics**, **Advanced Materials**, **Additive Manufacturing**, **Machine Learning** and other relevant topics. I am particularly interested in the research on advanced materials with tailored properties by integrated data-driven methods like machine-learning with traditional experimental and computational methods.
+Currently, I'm looking for PhD opportunities for fall 2025, focusing on **Material Behavior**, **Computational Mechanics**, **Advanced Materials**, **Additive Manufacturing**, **Machine Learning** and other relevant topics. I am particularly intrigued by the research on advanced materials with tailored properties by integrated data-driven methods like machine-learning with traditional experimental and computational methods.

@@ -11,15 +11,20 @@
     margin-bottom: 0;
 }
 
+.title {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+.hbb-section {
+    padding-top: 4rem;
+    padding-bottom: 0;
+}
+
 
 /* ===========================Styles for intro block======================== */
 
-/* Main spacing */
-#section-intro{
-    margin-bottom: 6rem;
-}
 
-/* Other styles */
 .avatar-wrapper{
     width: 250px;
     height: 250px;
@@ -40,6 +45,10 @@
 .intro-btn:hover {
     color: white;
     background-color: rgb(var(--color-primary-900));
+}
+
+.contact-btn svg {
+    margin-inline-start: -1.5rem;
 }
 
 
@@ -81,11 +90,6 @@
     background-color: rgb(var(--color-primary-900));
 }
 
-.academic .title {
-    font-size: 4rem;
-    margin-bottom: 5rem;
-}
-
 .academic-btn svg {
     margin-inline-end: 0.375rem;
 }
@@ -110,6 +114,12 @@ a:hover {
     color: rgb(var(--color-primary-700))
 }
 
+.courses li, .scores li {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
 .courses ul {
     display: flex;
     flex-wrap: wrap;
@@ -118,9 +128,6 @@ a:hover {
 }
 
 .courses li {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
     flex: 0 0 50%; /* Each item takes up 50% of the width, creating two columns */
     box-sizing: border-box; /* Ensures padding and borders are included in the width */
   }
@@ -129,11 +136,6 @@ a:hover {
     margin-top: 1.5rem;
     padding-left: 0;
 }
-.scores li {
-    list-style: none;
-    padding-left: 0;
-    margin-bottom: 0;
-  }
 
 .courses h2 {
     margin-bottom: 0.5rem;
@@ -146,13 +148,7 @@ a:hover {
         padding-left: 0;
         margin-right: 0;
     }
-    
-    .courses li {
-        list-style: none;
-        padding-left: 0;
-        margin-left: 0;
-      }
-    
+
     .center-mbl {
         flex-direction: column;
         align-items: center;
@@ -160,4 +156,11 @@ a:hover {
     }
 }
 
-
+/* Research */
+#research-projects .text-3xl{
+    color: rgb(var(--color-primary-700));
+    font-size: 2.25rem;
+    line-height: 2.5rem;;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}

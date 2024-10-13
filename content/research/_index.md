@@ -5,22 +5,19 @@ type: landing
 
 design:
   # Section spacing
-  spacing: '3rem'
 
 # Page sections
 sections:
-  - block: markdown
+  - block: research-summary
     content:
-      title: 'My Research'
+      title: 'Research Background'
       subtitle: ''
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        During my undergraduate studies, I took a range of theoretical and sessional courses that provided me with a solid theoretical foundation in core mechanical  topics, as well as some practical laboratory experience. In addition, I worked on various research projects, acquiring valuable skills in computational simulation, experimental testing, and programming.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
-        Please reach out to collaborate 😃
-
+        Currently, I am looking forward to pursuing my doctoral studies in the field of mechanical and material engineering. My research interests include but not limited to **Computational Mechanics**, **Material Behavior**, **Advanced Materials**, **Additive Manufacturing** and **Machine Learning**.
   - block: collection
+    id: research-projects
     content:
       title: Research Projects
       filters:

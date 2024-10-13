@@ -1,0 +1,20 @@
+{{/* Custom Blox: research-summary */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $title := $block.content.title | emojify | $page.RenderString }}
+{{ $text := $block.content.text | emojify | $page.RenderString | safeHTML }}
+
+
+<div class="flex flex-col items-center mx-auto justify-center px-6">
+
+  <h3 class="title mb-6 font-light text-center text-primary-700 dark:text-white">
+    {{ $title }}
+  </h3>
+
+  {{/* We use DIV rather than P to support `prose` class and multiple paragraphs */}}
+  {{ with $text }}
+  <div class="research-summary prose prose-slate lg:prose-xl dark:prose-invert max-w-prose">{{ . }}</div>
+  {{ end }}
+</div>
