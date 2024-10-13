@@ -48,7 +48,7 @@ jobs:
           ${{ runner.os }}-hugomod-
     - name: Build TinaCMS
       run: |
-        echo TEST
+        echo "${TEST}"
         echo "NEXT_PUBLIC_TINA_CLIENT_ID: ${NEXT_PUBLIC_TINA_CLIENT_ID}" > .env
         echo "TINA_TOKEN: ${TINA_TOKEN}" >> .env
         cat .env
