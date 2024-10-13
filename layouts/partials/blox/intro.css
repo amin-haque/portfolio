@@ -1,0 +1,38 @@
+/* Add your block styles here */
+.avatar-wrapper{
+    width: 250px;
+    height: 250px;
+}
+
+#about-me {
+    margin-top: 1rem;
+}
+
+.intro-btn {
+    max-width: 225px;
+    color: rgb(var(--color-primary-900));
+    border: 2px solid rgb(var(--color-primary-900));
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+}
+
+.intro-btn:hover {
+    color: white;
+    background-color: rgb(var(--color-primary-900));
+}
+
+
+@media screen and (max-width: 767px) {
+    #about-me {
+        margin-top: 0;
+    }
+
+    .bio-text {
+        text-align: center;
+    }
+
+    .intro-desc {
+        align-items: center;
+    }
+}
+

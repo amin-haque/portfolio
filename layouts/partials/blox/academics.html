@@ -1,0 +1,110 @@
+{{/* Hugo Blox: Experience */}}
+{{/* Documentation: https://hugoblox.com/blocks/ */}}
+{{/* License: https://github.com/HugoBlox/hugo-blox-builder/blob/main/LICENSE.md */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $text := $block.content.text | emojify | $page.RenderString }}
+
+{{ $author := $block.content.username | default "admin" }}
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+{{ errorf "Could not find an author page at `%s`. Please check the value of `author` in your About widget and create an associated author page if one does not already exist. See https://docs.hugoblox.com/page-builder/#about " $person_page_path }}
+{{end}}
+{{ $person := $person_page.Params }}
+
+<div class="flex flex-col items-center academic-list mx-auto">
+<!--  <article class="prose prose-slate lg:prose-xl dark:prose-invert">-->
+<!--    {{ with $block.content.title }}-->
+<!--    <h2>{{ . }}</h2>-->
+<!--    {{end}}-->
+<!--  </article>-->
+
+<!-- Need Gap >= 3 when flex-row due to negative margin on cols (-start-3) -->
+<div class="flex flex-col lg:gap-x-6 w-full px-6 sm:px-0">
+
+{{ if $person.education }}
+<div class="academic w-full">
+  <h3 class="title mb-12 text-4xl text-center font-thin  text-primary-700 dark:text-white">Academics</h3>
+    {{/*  <ol class="relative border-s border-gray-200 dark:border-gray-700">  */}}
+    <ol class="relative">
+      {{ range $idx, $key := $person.education }}
+      <li class="center-mbl flex gap-12 mb-10">
+          {{ if .logo }}
+          {{ $logo := ($person_page.Resources.ByType "image").GetMatch (.logo) }} 
+          {{ $logo_image := $logo.Fill "150x150 Center" }}
+          <a href="{{.uni_url}}" target="_blank"><img class="uni-logo bg-white dark:bg-gray-800 p-1" src="{{ $logo_image.RelPermalink }}" alt="{{$person_page.Title}}"
+          width="{{ $logo_image.Width }}" height="{{ $logo_image.Height }}"></a>
+          {{ end }}
+          <div>
+            <a href="{{ .uni_url }}" target="_blank"><h3 class="flex items-center mb-1 text-3xl font-semibold dark:text-white">{{.area}}</h3></a>
+            <span class="block mt-2 mb-2 text-lg font-normal leading-none text-gray-500 dark:text-gray-300">{{.institution}}</span>
+            <time class="block mb-4 text-md font-normal leading-none text-gray-500 dark:text-gray-300">
+              {{ if .date_start }}
+                {{ (time .date_start) | time.Format ($block.design.date_format | default "January 2006") }} –
+              {{ end }}
+              {{ if .date_end}}
+                {{ (time .date_end) | time.Format ($block.design.date_format | default "January 2006") }}
+              {{else}}
+                {{ i18n "present" | default "Present" }}
+              {{end}}
+            </time>
+            <span class="block mb-2 text-md font-normal leading-none text-gray-500 dark:text-gray-300">CGPA: {{.cgpa}}</span>
+            <div class="courses mt-6 mb-4 text-base font-normal text-gray-500 dark:text-gray-300 prose prose-slate dark:prose-invert">{{.summary | $page.RenderString}}</div>
+  
+            {{ with .button }}
+            <div class="academic-btn-wrapper">
+              <a href="{{.url}}" target="_blank" rel="noopener" class=" academic-btn rounded-full inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+                <svg class="w-4 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 2 20 20">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12Z" fill="currentColor"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M21.83 11.2807C19.542 7.15186 15.8122 5 12 5C8.18777 5 4.45796 7.15186 2.17003 11.2807C1.94637 11.6844 1.94361 12.1821 2.16029 12.5876C4.41183 16.8013 8.1628 19 12 19C15.8372 19 19.5882 16.8013 21.8397 12.5876C22.0564 12.1821 22.0536 11.6844 21.83 11.2807ZM12 17C9.06097 17 6.04052 15.3724 4.09173 11.9487C6.06862 8.59614 9.07319 7 12 7C14.9268 7 17.9314 8.59614 19.9083 11.9487C17.9595 15.3724 14.939 17 12 17Z" fill="currentColor"/></svg>
+              {{.text}}</a>
+            </div> 
+          </div>         
+          {{ end }}
+      </li>
+      {{ end }}
+    </ol>
+</div>
+{{ end }}
+
+{{ if $person.test_scores }}
+<div class="academic w-full">
+  <h3 class="mt-6 mb-12 text-4xl text-center font-thin  text-primary-700 dark:text-white">Standardized Test Scores</h3>
+    {{/*  <ol class="relative border-s border-gray-200 dark:border-gray-700">  */}}
+    <ol class="relative">
+      {{ range $idx, $key := $person.test_scores }}
+      <li class="center-mbl flex gap-12 mb-10">
+        {{ if .logo }}
+        {{ $logo := ($person_page.Resources.ByType "image").GetMatch (.logo) }} 
+        {{ $logo_image := $logo.Fill "150x84 Center" }}
+        <a href="{{.url}}" target="_blank"><img class="test-logo bg-white dark:bg-gray-800 p-1" src="{{ $logo_image.RelPermalink }}" alt="{{$person_page.Title}}"
+        width="{{ $logo_image.Width }}" height="{{ $logo_image.Height }}"></a>
+        {{ end }}
+        <div>
+          <a href="{{ .url }}" target="_blank"><h3 class="flex items-center mb-1 text-3xl font-semibold dark:text-white">{{.exam}}</h3></a>
+                    <time class="block mt-2 mb-4 text-md font-normal leading-none text-gray-500 dark:text-gray-300">
+                        {{ (time .date) | time.Format ($block.design.date_format | default "January 2006") }}
+                    </time>
+                    <div class="scores mb-4 text-base font-normal text-gray-500 dark:text-gray-300 prose prose-slate dark:prose-invert">{{.score | $page.RenderString}}</div>
+            
+                    {{ with .button }}
+                    <a href="{{.url}}" target="_blank" rel="noopener" class="academic-btn inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-full hover:bg-gray-100 hover:text-primary-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-primary-700 dark:bg-gray-800 dark:text-gray-300 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+                      <svg class="w-4 h-3.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 2 20 20">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12Z" fill="currentColor"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.83 11.2807C19.542 7.15186 15.8122 5 12 5C8.18777 5 4.45796 7.15186 2.17003 11.2807C1.94637 11.6844 1.94361 12.1821 2.16029 12.5876C4.41183 16.8013 8.1628 19 12 19C15.8372 19 19.5882 16.8013 21.8397 12.5876C22.0564 12.1821 22.0536 11.6844 21.83 11.2807ZM12 17C9.06097 17 6.04052 15.3724 4.09173 11.9487C6.06862 8.59614 9.07319 7 12 7C14.9268 7 17.9314 8.59614 19.9083 11.9487C17.9595 15.3724 14.939 17 12 17Z" fill="currentColor"/></svg>
+                        {{.text}}
+                    </a>
+                    {{ end }}
+        </div>
+      </li>
+      {{ end }}
+    </ol>
+</div>
+{{ end }}
+
+</div>
+
+</div>
