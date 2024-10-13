@@ -26,9 +26,8 @@ jobs:
     if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
     env:
-      NEXT_PUBLIC_TINA_CLIENT_ID: ${{ secrets.NEXT_PUBLIC_TINA_CLIENT_ID }}
-      TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
-      TEST: ${{ secrets.TEST }}    
+      NEXT_PUBLIC_TINA_CLIENT_ID: dc4f2f3b-ea7c-4087-b9e3-12003454d61d
+      TINA_TOKEN: a3b0ca18e7c5329dd7d73b1b7c4a31787f4a461c
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -45,22 +44,9 @@ jobs:
         path: /tmp/hugo_cache_runner/
         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
         restore-keys: |
-          ${{ runner.os }}-hugomod-
-    - name: Verify Secrets
-      run: |
-        if [ -z "${NEXT_PUBLIC_TINA_CLIENT_ID}" ]; then
-          echo "NEXT_PUBLIC_TINA_CLIENT_ID is empty"
-        else
-          echo "NEXT_PUBLIC_TINA_CLIENT_ID is set"
-        fi
-        if [ -z "${TINA_TOKEN}" ]; then
-          echo "TINA_TOKEN is empty"
-        else
-          echo "TINA_TOKEN is set"
-        fi          
+          ${{ runner.os }}-hugomod-        
     - name: Build TinaCMS
       run: |
-        echo "${TEST}"
         echo "NEXT_PUBLIC_TINA_CLIENT_ID: ${NEXT_PUBLIC_TINA_CLIENT_ID}" > .env
         echo "TINA_TOKEN: ${TINA_TOKEN}" >> .env
         cat .env
