@@ -48,7 +48,7 @@ jobs:
           ${{ runner.os }}-hugomod-
     - name: Build TinaCMS
       run: |
-        if [ -z "${{ TINA_TOKEN }}" ]; then
+        if [ -z TINA_TOKEN ]; then
           echo "MY_SECRET does not exist or is empty"
         else
           echo "MY_SECRET exists and is set"
