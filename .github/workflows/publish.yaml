@@ -28,6 +28,7 @@ jobs:
     env:
       TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
       TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
+      MY_SECRET: ${{ secrets.MY_SECRET }}
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -46,7 +47,13 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-hugomod-
     - name: Build TinaCMS
-      run: npm install -g pnpm && pnpm i && npx tinacms build
+      run: |
+        if [ -z "${{ TINA_TOKEN }}" ]; then
+          echo "MY_SECRET does not exist or is empty"
+        else
+          echo "MY_SECRET exists and is set"
+        fi
+        npm install -g pnpm && pnpm i && npx tinacms build
     - name: Run custom command
       run: |
         hugo
