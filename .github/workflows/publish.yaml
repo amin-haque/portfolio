@@ -26,9 +26,8 @@ jobs:
     if: github.repository_owner != 'HugoBlox'
     runs-on: ubuntu-latest
     env:
-      TINA_PUBLIC_CLIENT_ID: dc4f2f3b-ea7c-4087-b9e3-12003454d61d
-      TINA_TOKEN: ba6f05b8477251b582c45f44e67748b7391b43c0
-      MY_SECRET: ${{ secrets.MY_SECRET }}
+      TINA_PUBLIC_CLIENT_ID: ${{ secrets.TINA_PUBLIC_CLIENT_ID }}
+      TINA_TOKEN: ${{ secrets.TINA_TOKEN }}
     steps:
     - name: Checkout
       uses: actions/checkout@v4
@@ -46,20 +45,12 @@ jobs:
         key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.mod') }}
         restore-keys: |
           ${{ runner.os }}-hugomod-
-    - name: Check Environment Secret
-      run: |
-        if [ -z MY_SECRET ]; then
-          echo "MY_SECRET does not exist or is empty"
-        else
-          echo "MY_SECRET exists and is set"
-        fi
     - name: Build TinaCMS
       run: npm install -g pnpm && pnpm i && npx tinacms build
-
     - name: Run custom command
       run: |
-        echo 'Hi ${{ env.TINA_TOKEN }}'
         hugo
+        hugo mod get -u github.com/ahmed-hossain/custom-blox
         hugo mod vendor
         cd ./_vendor/github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind/
         pnpm i
