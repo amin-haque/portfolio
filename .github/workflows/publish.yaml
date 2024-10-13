@@ -47,7 +47,7 @@ jobs:
           ${{ runner.os }}-hugomod-
     - name: Check Environment Variable
       run: |
-        if [ -z "${{ NEXT_PUBLIC_TINA_CLIENT_ID }}" ]; then
+        if [ -z NEXT_PUBLIC_TINA_CLIENT_ID ]; then
           echo "MY_SECRET does not exist or is empty"
         else
           echo "MY_SECRET exists and is set"
