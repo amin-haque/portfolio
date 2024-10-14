@@ -2,8 +2,7 @@ public/
 COMMANDS
 _vendor/
 hugo_stats.json
-node_modules
-.env
+resources
 
 node_modules
 .env

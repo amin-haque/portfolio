@@ -13,6 +13,7 @@
       "details",
       "div",
       "em",
+      "figcaption",
       "figure",
       "footer",
       "g",
@@ -539,6 +540,7 @@
       "code",
       "diagrams",
       "did-you-find-this-page-helpful-consider-sharing-it-",
+      "figure-caption",
       "hide-button",
       "highlighting",
       "ideation",
@@ -573,6 +575,7 @@
       "spoiler-3",
       "teaching",
       "test-students",
+      "this-is-a-test",
       "todo-lists",
       "top",
       "video"
