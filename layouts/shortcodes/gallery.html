@@ -1,0 +1,16 @@
+{{ $id := .Get "name" }}
+{{ range .Page.Params.galleries }}
+  {{ if eq .name $id }}
+  <div class="container mx-auto p-4">
+    <div class="grid grid-cols-2 gap-4">
+        {{ range .photos }}
+        <div class="relative overflow-hidden">
+            {{ template "_default/_markup/render-image.html" (dict "Destination" (urlize .) "Title" "" "Text" "") }}
+        </div>  
+        {{ end }}   
+    </div>
+</div>
+  {{ end }}
+{{ end }}
+
+

@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      react:
+        specifier: ^18.3.1
+        version: 18.3.1
       tinacms:
         specifier: ^2.2.9
         version: 2.2.9(@types/react@18.3.11)(abstract-level@1.0.4)(immer@10.1.1)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(scheduler@0.23.2)(sucrase@3.35.0)(typescript@5.6.3)

@@ -3,9 +3,6 @@ title: 'Academics'
 date: 2023-10-24
 type: landing
 
-design:
-
-
 # Note: `username` refers to the user's folder name in `content/authors/`
 
 # Page sections
