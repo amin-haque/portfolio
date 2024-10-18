@@ -86,9 +86,9 @@ test_scores:
     date: 2024-09-16
     score: |
       - Overall Score: 331/340
-      - Quantitative Reasoning: 168/170 (82<sup>th</sup> percentile)
-      - Verbal Reasoning: 163/170 (91<sup>th</sup> percentile)
-      - Analytical Writing: 3.5/6 (42<sup>th</sup> percentile)
+      - Quantitative Reasoning: 168/170 (83<sup>rd</sup> percentile)
+      - Verbal Reasoning: 163/170 (91<sup>st</sup> percentile)
+      - Analytical Writing: 3.5/6 (42<sup>nd</sup> percentile)
     # button:
     #   url: /uploads/gre_score.pdf
     #   text: View Score Report
@@ -191,6 +191,9 @@ awards:
       - Synthesize your own blockchain solutions
       - Gain an in-depth understanding of the specific mechanics of Bitcoin
       - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
+      - Synthesize your own blockchain solutions
+      - Gain an in-depth understanding of the specific mechanics of Bitcoin
+      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm blah blah blah
   - title: 'Object-Oriented Programming in R'
     url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
     certificate_url: https://www.datacamp.com

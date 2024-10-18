@@ -21,7 +21,7 @@ npx tailwindcss -i ./assets/css/styles.css --config ./tailwind.config.js -o ../.
 Set-Location -Path '../../../../../../'
 
 # Remove the _vendor directory
-Remove-Item -Recurse -Force ./_vendor
+# Remove-Item -Recurse -Force ./_vendor
 
 # Start Hugo server
 hugo server --disableFastRender

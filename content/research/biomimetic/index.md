@@ -1,5 +1,5 @@
 ---
-title: Grad Co General Info
+title: Biomimetic scale bending stiffness tuning
 date: 2024-10-08T18:00:00.000Z
 abstract: >-
   This is an abstract **blah** blah *blah* how to do the project? It will track
