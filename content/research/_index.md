@@ -10,7 +10,7 @@ design:
 sections:
   - block: research-summary
     content:
-      title: 'Research Background'
+      title: 'Research'
       subtitle: ''
       text: |
         During my undergraduate studies, I took a range of theoretical and sessional courses that provided me with a solid theoretical foundation in core mechanical  topics, as well as some practical laboratory experience. In addition, I worked on various research projects, acquiring valuable skills in computational simulation, experimental testing, and programming.
