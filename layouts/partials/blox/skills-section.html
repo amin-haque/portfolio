@@ -15,7 +15,7 @@
 {{ $skills := $person_page.Params.skills }}
 {{ $show_show_skill_percentage := $block.design.show_skill_percentage | default true }}
 
-<div class="container prose max-w-screen-md mx-auto">
+<div class="container prose max-w-screen-md mx-auto px-6">
 
   <div class="title text-center font-light text-primary-700 dark:text-white">
     {{ $block.content.title | markdownify | emojify }}
