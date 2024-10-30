@@ -110,9 +110,8 @@ work:
       date_start: 2023-11-01 
       date_end: 2023-11-27
       summary: |
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - Designed and optimized the braking system utilizing CAD & CAE.
+        - Initiated manufacturing and testing of the braking system.
     - position: Head of Projects and Competition
       company_name: BUET Robotics Society
       company_url: 'https://www.facebook.com/BUETRoboticsSociety'
@@ -120,9 +119,8 @@ work:
       date_start: 2023-11-01 
       date_end: 2023-11-27
       summary: |
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - Organized and instructed several workshops on robotics.
+        - Organized national level inter-university robotics competitions including Robo Carnival 2023 and 2024
   - type: Industrial Attachments
     items:
     - position: Mechanical Engineering Intern
@@ -132,27 +130,26 @@ work:
       date_start: 2023-11-01 
       date_end: 2023-11-27
       summary: |
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        -  Gained in-depth knowledge about steel re-rolling process utilizing cutting edge technologies.
+        - Experienced various industrial systems such as Induction Furnace, WTP, overhead cranes, and power supply.
+        - Learned about industry practices such as TPM, quality control, and inventory management.
     - position: Industrial Visit to Savar Plant
       company_name: Energypac Engineering Limited
       company_url: 'https://energypac.com.bd/'
       company_logo: energypac.png
       date: 2022-06-30
       summary: |
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - Observed transformer parts fabrication using sheet cutting, hydraulic bending, CNC gas cutting, and welding.
+        - Explored research facilities developing transformers with milling, lathe machines, resin casting, and 3D printing.
+        - Gained insights into transformer production from fabrication to assembly and testing.
     - position: Industrial Visit to Titas Gas Field, Bramanbaria
       company_name: Bangladesh Gas Fields Co. Ltd.
       company_url: 'https://bdgfcl.brahmanbaria.gov.bd/bn/site/page/IfQy-%E0%A6%A4%E0%A6%BF%E0%A6%A4%E0%A6%BE%E0%A6%B8-%E0%A6%97%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B8-%E0%A6%AB%E0%A6%BF%E0%A6%B2%E0%A7%8D%E0%A6%A1'
       company_logo: BGFCL.png
       date: 2022-06-30
       summary: |
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
-        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - Gained firsthand knowledge of gas extraction processes, including drilling techniques and equipment used in the field.
+        - Learnt about safety protocols and emergency response measures essential for working in hazardous environments
   - type: Other Affiliations
     items:
     - position: Volunteer and Blood Donor
