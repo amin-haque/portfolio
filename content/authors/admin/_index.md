@@ -92,88 +92,96 @@ test_scores:
     # button:
     #   url: /uploads/gre_score.pdf
     #   text: View Score Report
-  # - exam: International English Language Testing Service (IELTS)
-  #   url: https://ielts.org
-  #   logo: ielts.png
-  #   date: 2024-10-26
-  #   score: |
-  #     - Band: 7.5/9
-  #     - Listening: 8.5/9
-  #     - Reading: 8/9
-  #     - Writing: 6.5/9
-  #     - Speaking: 6.5/9
+  - exam: International English Language Testing Service (IELTS)
+    url: https://ielts.org
+    logo: ielts.png
+    date: 2024-10-26
+    score: |
+      - Overall Score: 8.0
+      - Listening: 9.0 &emsp; Reading: 8.5 &emsp; Writing: 6.5 &emsp; Speaking: 7.0
 
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
-skills:
-  - name: Technical Skills
+  - type: Technical Teams
     items:
-      - name: Python
-        description: ''
-        percent: 80
-        icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
+    - position: Lead, Brake and Safety Subteam
+      company_name: Automaestro - Formula Student Team
+      company_url: 'https://www.facebook.com/@automaestro.bac'
+      company_logo: automaestro.png
+      date_start: 2023-11-01 
+      date_end: 2023-11-27
+      summary: |
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    - position: Head of Projects and Competition
+      company_name: BUET Robotics Society
+      company_url: 'https://www.facebook.com/BUETRoboticsSociety'
+      company_logo: brs.png
+      date_start: 2023-11-01 
+      date_end: 2023-11-27
+      summary: |
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - type: Industrial Attachments
     items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
+    - position: Mechanical Engineering Intern
+      company_name: BSRM Steel Limited
+      company_url: 'https://bsrm.com'
+      company_logo: bsrm.png
+      date_start: 2023-11-01 
+      date_end: 2023-11-27
+      summary: |
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    - position: Industrial Visit to Savar Plant
+      company_name: Energypac Engineering Limited
+      company_url: 'https://energypac.com.bd/'
+      company_logo: energypac.png
+      date: 2022-06-30
+      summary: |
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+    - position: Industrial Visit to Titas Gas Field, Bramanbaria
+      company_name: Bangladesh Gas Fields Co. Ltd.
+      company_url: 'https://bdgfcl.brahmanbaria.gov.bd/bn/site/page/IfQy-%E0%A6%A4%E0%A6%BF%E0%A6%A4%E0%A6%BE%E0%A6%B8-%E0%A6%97%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B8-%E0%A6%AB%E0%A6%BF%E0%A6%B2%E0%A7%8D%E0%A6%A1'
+      company_logo: BGFCL.png
+      date: 2022-06-30
+      summary: |
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+        - lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - type: Other Affiliations
+    items:
+    - position: Volunteer and Blood Donor
+      company_name: Badhan BUET Zone
+      company_url: 'https://www.facebook.com/badhan.buet.zone'
+      company_logo: badhan.png
+      date_start: 2023-11-01 
+      date_end: 2023-11-27
+    - position: Student Affiliate Member
+      company_name: IMECHE Student Chapter
+      company_url: 'https://www.facebook.com/IMechE.BUET/'
+      company_logo: imeche.jpg
+      date_start: 2023-11-01 
+      date_end: 2023-11-27
 
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
 
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
+  - title: 'Certified Solidworks Professional'
+    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
+    certificate_url: https://www.datacamp.com
+    date: '2023-01-21'
+    awarder: Dessault Systems
+    icon: ds
+    summary: |
+      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
   - title: Neural Networks and Deep Learning
     url: https://www.coursera.org/learn/neural-networks-deep-learning
     date: '2023-11-25'
@@ -181,6 +189,8 @@ awards:
     icon: coursera
     summary: |
       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+      - <a href="facebook.com">Facebook</a>
+      - world
   - title: Blockchain Fundamentals
     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
     date: '2023-07-01'
@@ -212,14 +222,6 @@ awards:
       - Synthesize your own blockchain solutions
       - Gain an in-depth understanding of the specific mechanics of Bitcoin
       - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Certified Solidworks Professional'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: ibm
-    icon: ibm
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
 I am a recent Mechanical Engineering graduate from the Bangladesh University of Engineering and Technology (BUET). Driven by curiosity and a love for solving problems, I have worked on a number of mechanical design and research projects, becoming proficient in various design and analysis software, experimental and simulation techniques, and developing a strong programming background. I always love to learn about new stuffs, whether it's understanding an academic concept or picking up a new language. When I'm not doing so, you may find me roaming the streets, watching anime, or playing video games.

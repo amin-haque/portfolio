@@ -8,7 +8,7 @@ design:
 
 # Page sections
 sections:
-  - block: research-summary
+  - block: page-summary
     content:
       title: 'Research'
       subtitle: ''
@@ -16,7 +16,7 @@ sections:
         During my undergraduate studies, I took a range of theoretical and sessional courses that provided me with a solid theoretical foundation in core mechanical  topics, as well as some practical laboratory experience. In addition, I worked on various research projects, acquiring valuable skills in computational simulation, experimental testing, and programming.
 
         Currently, I am looking forward to pursuing my doctoral studies in the field of mechanical and material engineering. My research interests include but not limited to **Computational Mechanics**, **Material Behavior**, **Advanced Materials**, **Additive Manufacturing** and **Machine Learning**.
-  - block: collection
+  - block: project-collection
     id: research-projects
     content:
       title: Research Projects
@@ -25,7 +25,7 @@ sections:
           - research
 
     design:
-      view: article-grid
+      view: project-grid
       fill_image: false
       columns: 2
 ---

@@ -70,11 +70,7 @@
 
 
 /* Styles for academics block */
-.uni-logo {
-    max-width: 150px;
-}
-
-.test-logo {
+.uni-logo, .test-logo, .company-logo {
     max-width: 150px;
 }
 

@@ -15,7 +15,7 @@ sections:
       title: Skills
       username: admin
     skills:
-      - name: Simulation Softwares
+      - name: Simulation
         tools:
           - name: Lammps
             logo: /skills/lammps.png
@@ -23,7 +23,7 @@ sections:
             logo: /skills/abaqus.png
           - name: Ansys Mechanical
             logo: /skills/ansys.png
-      - name: CAD Softwares
+      - name: CAD
         tools:
           - name: Solidworks
             logo: /skills/solidworks.png
@@ -31,40 +31,40 @@ sections:
             logo: /skills/fusion360.png
           - name: AutoCad
             logo: /skills/autocad.png
-      - name: Programming Languages
+      - name: Programming
         tools:
           - name: Python
-            logo: /skills/fusion360.png
+            logo: /skills/python.png
           - name: Matlab
-            logo: /skills/fusion360.png
+            logo: /skills/matlab.png
           - name: C
-            logo: /skills/fusion360.png
-      - name: Hardware Skills
+            logo: /skills/c.jpeg
+      - name: Hardware
         tools:
           - name: 3d printing
-            logo: /skills/fusion360.png
+            logo: /skills/3d_printing.jpeg
           - name: Product Design
-            logo: /skills/fusion360.png
+            logo: /skills/product_design.png
           - name: Arduino
-            logo: /skills/fusion360.png
-      - name: Miscellaneous Tools
+            logo: /skills/arduino.png
+      - name: Miscellaneous
         tools:
           - name: Microsoft Words
-            logo: /skills/fusion360.png
+            logo: /skills/word.png
           - name: Microsoft Excel
-            logo: /skills/fusion360.png
+            logo: /skills/excel.png
           - name: Microsoft Powerpoint
-            logo: /skills/fusion360.png
+            logo: /skills/powerpoint.png
           - name: Latex
-            logo: /skills/fusion360.png
+            logo: /skills/latex.png
           - name: Zotero
-            logo: /skills/fusion360.png
+            logo: /skills/zotero.png
           - name: Techplot
-            logo: /skills/fusion360.png
+            logo: /skills/tecplot.jpg
           - name: Matplotlib
-            logo: /skills/fusion360.png
+            logo: /skills/matplotlib.png
 
-  - block: resume-awards
+  - block: certifications
     content:
       title: Certifications
       username: admin

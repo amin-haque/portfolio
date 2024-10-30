@@ -71,7 +71,8 @@
       <li class="center-mbl flex gap-12 mb-10">
         {{ if .logo }}
         {{ $logo := ($person_page.Resources.ByType "image").GetMatch (.logo) }} 
-        {{ $logo_image := $logo.Fill "150x84 Center" }}
+        {{ $logo_height := mul (div (mul 150 $logo.Height) $logo.Width) 1 }}
+        {{ $logo_image := $logo.Fill (printf "150x%d Center" $logo_height) }}
         <a href="{{.url}}" target="_blank"><img class="test-logo bg-white dark:bg-gray-800 p-1" src="{{ $logo_image.RelPermalink }}" alt="{{$person_page.Title}}"
         width="{{ $logo_image.Width }}" height="{{ $logo_image.Height }}"></a>
         {{ end }}
