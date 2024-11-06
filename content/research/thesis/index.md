@@ -3,7 +3,7 @@ type: projects
 title: >-
   Atomistic investicagation of crack propagation and parameterization of
   cohesive traction-separation law in cobalt-titanium alloy.
-date: 2024-07-01T00:00:00.000Z
+date: 2024-11-01T00:00:00.000Z
 image:
   filename: featured.jpg
   caption: ''

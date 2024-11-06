@@ -101,26 +101,6 @@ test_scores:
       - Listening: 9.0 &emsp; Reading: 8.5 &emsp; Writing: 6.5 &emsp; Speaking: 7.0
 
 work:
-  - type: Technical Teams
-    items:
-    - position: Lead, Brake and Safety Subteam
-      company_name: Automaestro - Formula Student Team
-      company_url: 'https://www.facebook.com/@automaestro.bac'
-      company_logo: automaestro.png
-      date_start: 2023-11-01 
-      date_end: 2023-11-27
-      summary: |
-        - Designed and optimized the braking system utilizing CAD & CAE.
-        - Initiated manufacturing and testing of the braking system.
-    - position: Head of Projects and Competition
-      company_name: BUET Robotics Society
-      company_url: 'https://www.facebook.com/BUETRoboticsSociety'
-      company_logo: brs.png
-      date_start: 2023-11-01 
-      date_end: 2023-11-27
-      summary: |
-        - Organized and instructed several workshops on robotics.
-        - Organized national level inter-university robotics competitions including Robo Carnival 2023 and 2024
   - type: Industrial Attachments
     items:
     - position: Mechanical Engineering Intern
@@ -150,6 +130,26 @@ work:
       summary: |
         - Gained firsthand knowledge of gas extraction processes, including drilling techniques and equipment used in the field.
         - Learnt about safety protocols and emergency response measures essential for working in hazardous environments
+  - type: Technical Teams
+    items:
+    - position: Lead, Brake and Safety Subteam
+      company_name: Automaestro - Formula Student Team
+      company_url: 'https://www.facebook.com/@automaestro.bac'
+      company_logo: automaestro.png
+      date_start: 2023-01-01 
+      date_end: 2024-07-01
+      summary: |
+        - Designed and optimized the braking system utilizing CAD & CAE.
+        - Initiated manufacturing and testing of the braking system.
+    - position: Head of Projects and Competition
+      company_name: BUET Robotics Society
+      company_url: 'https://www.facebook.com/BUETRoboticsSociety'
+      company_logo: brs.png
+      date_start: 2022-07-01 
+      date_end: 2024-07-01
+      summary: |
+        - Organized and instructed several workshops on robotics.
+        - Organized national level inter-university robotics competitions including Robo Carnival 2023 and 2024
   - type: Other Affiliations
     items:
     - position: Volunteer and Blood Donor
@@ -172,53 +172,46 @@ work:
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
   - title: 'Certified Solidworks Professional'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
+    url: https://www.solidworks.com/certifications/solidworks-cad-design-professional
+    certificate_url: https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-25FLHUVCGZ
+    date: '2023-03-04'
     awarder: Dessault Systems
     icon: ds
     summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
+      The Certified SolidWorks Professional (CSWP) certification has also been obtained, recognizing the ability to apply SolidWorks in solving more complex engineering and design challenges. Advanced skills, such as part and assembly design, detailed drawing creation, and the use of specialized tools for simulations and other advanced features, were covered in the CSWP exam. This certification affirms the capability to efficiently work with SolidWorks in professional environments requiring more intricate design and analysis tasks.
+  - title: 'Certified Solidworks Associate'
+    url: https://www.solidworks.com/certifications/solidworks-cad-design-associate
+    certificate_url: https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-8ML4WNRVSD
+    date: '2023-02-27'
+    awarder: Dessault Systems
+    icon: ds
+    summary: |
+      The SolidWorks Associate (CSWA) certification has been earned, reflecting proficiency in using SolidWorks for essential 3D CAD tasks. This certification demonstrates the ability to handle part modeling, assembly creation, and basic drawing generation. The CSWA exam tested the understanding of SolidWorks’ core functionality, ensuring a strong foundation in applying the software for entry-level CAD design work.
+  - title: Python 3 Programming Specialization
+    url: https://www.coursera.org/specializations/python-3-programming
+    certificate_url: https://coursera.org/share/e12db6d8bb606c06757e026a1ced20e6
+    date: '2020-07-31'
+    awarder: Coursera - University of Michigan 
     icon: coursera
-    summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-      - <a href="facebook.com">Facebook</a>
-      - world
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
-    summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm blah blah blah
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
-    summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
+    summary: >-
+      This specialization provides a comprehensive introduction to Python 3 programming, covering fundamental concepts such as variables, conditionals, and loops, while progressing to intermediate topics like keyword parameters, list comprehensions, lambda expressions, and class inheritance. The course emphasizes hands-on practice and equips learners with strategies for reasoning about program execution, enabling effective debugging. By the end of the specialization, participants will be capable of writing programs that interact with Internet APIs to retrieve and process data, as well as independently learning new modules and APIs by referring to documentation. This foundation sets the stage for becoming a proficient and self-sufficient Python programmer.
+
+      <p class="mb-0">Courses Completed:</p>
+      <ul class="mt-0 pl-4 not-prose">
+        <li>1. <a href="https://www.coursera.org/learn/python-basics?specialization=python-3-programming" target="_blank">Python Basics</a></li>
+        <li>2. <a href="https://www.coursera.org/learn/python-functions-files-dictionaries?specialization=python-3-programming" target="_blank">Python Functions, Files, and Dictionaries</a></li>
+        <li>3. <a href="https://www.coursera.org/learn/data-collection-processing-python?specialization=python-3-programming" target="_blank">Data Collection and Processing with Python</a></li>
+        <li>4. <a href="https://www.coursera.org/learn/python-classes-inheritance?specialization=python-3-programming" target="_blank">Python Classes and Inheritance</a></li>
+        <li>5. <a href="https://www.coursera.org/learn/python-project?specialization=python-3-programming" target="_blank">Python Project: Software Engineering and Image Manipulation</a></li>
+      </ul>
+  - title: MATLAB Onramp
+    url: https://matlabacademy.mathworks.com/details/matlab-onramp/gettingstarted
+    certificate_url: https://matlabacademy.mathworks.com/progress/share/certificate.html?id=81c90e2b-2569-4c9b-a0ab-4d26e57862cf&
+    date: '2021-11-30'
+    awarder: Mathworks 
+    icon: matlab
+    summary: >-
+      The MATLAB Onramp course is an introductory, self-paced online course designed to teach the fundamentals of MATLAB programming. It covers key topics such as working with variables, arrays, and functions, as well as basic data visualization techniques. The course offers interactive exercises and real-world examples to help learners develop practical skills in using MATLAB for numerical computing and problem-solving. By the end of the course, participants will be able to write simple scripts and functions to perform data analysis and visualization tasks.
 ---
 
 I am a recent Mechanical Engineering graduate from the Bangladesh University of Engineering and Technology (BUET). Driven by curiosity and a love for solving problems, I have worked on a number of mechanical design and research projects, becoming proficient in various design and analysis software, experimental and simulation techniques, and developing a strong programming background. I always love to learn about new stuffs, whether it's understanding an academic concept or picking up a new language. When I'm not doing so, you may find me exploring a new street, watching anime, or playing video games.

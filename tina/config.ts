@@ -165,8 +165,22 @@ export default defineConfig({
           },
           {
             type: "string",
+            name: "summary",
+            label: "Brief overview",
+            required: false,
+            ui: {
+              component: 'textarea',
+              validate: (value) => {
+                if(value?.length < 250) {
+                  return 'Write atleast 250 characters';
+                }
+              }
+            }
+          },
+          {
+            type: "string",
             name: "abstract",
-            label: "Summary (Write at least 250 characters)",
+            label: "Abstract (Write at least 250 characters)",
             required: false,
             ui: {
               component: 'textarea',
