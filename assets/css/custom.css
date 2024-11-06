@@ -26,7 +26,13 @@
     margin-bottom: 0;
 }
 
-
+.collection-title{
+    color: rgb(var(--color-primary-700));
+    font-size: 2.25rem;
+    line-height: 2.5rem;;
+    font-weight: 300;
+    margin-bottom: 1rem;
+}
 
 /* ===========================Styles for intro block======================== */
 
@@ -135,13 +141,4 @@ a:hover {
         align-items: center;
         text-align: center;
     }
-}
-
-/* Research */
-#research-projects .text-3xl{
-    color: rgb(var(--color-primary-700));
-    font-size: 2.25rem;
-    line-height: 2.5rem;;
-    font-weight: 300;
-    margin-bottom: 1rem;
 }

@@ -1,0 +1,54 @@
+{{/* Custom Blox: Gallery */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $photos := $block.content.photos }}
+{{ $width := 480 }}
+{{ $height := 270 }}
+
+
+{{ if $block.content.title }}
+<div class="flex justify-center collection-title dark:text-white">
+{{ $block.content.title | emojify | $page.RenderString }}
+</div>
+{{ end }}
+
+
+{{ with $photos }}
+<div class="max-w-screen-lg mx-auto px-6">
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 px-8 md:px-0">
+    {{ range $index, $item := $photos}}
+        {{ $is_remote := strings.HasPrefix $item "http" }}
+        {{- $img := "" -}}
+        {{- if not $is_remote -}}
+            {{- $img = ($page.Resources.ByType "image").GetMatch $item -}}
+            {{- if not $img -}}
+                {{- $img = resources.Get (path.Join "media" $item) -}}
+            {{- end -}}
+        {{- end -}}
+        {{- if $img -}}
+            {{- $img_lg := $img.Fit "1200x1200 webp" -}}
+            {{- $img_md := $img_lg.Fit "760x760 webp" -}}{{/* Match `.docs-article-container` max-width */}}
+            {{- $img_sm := $img_md.Fit "400x400 webp" -}}
+            {{- $width := $width | default $img_md.Width -}}
+            {{- $height := $height | default $img_md.Height -}}
+            <img alt="" srcset="
+                {{ $img_sm.RelPermalink }} 400w,
+                {{ $img_md.RelPermalink }} 760w,
+                {{ $img_lg.RelPermalink }} 1200w"
+                src="{{ $img_sm.RelPermalink }}"
+                width="{{ $width }}"
+                height="{{ $height }}"
+                loading="lazy"
+                class="h-auto max-w-full rounded-lg" />
+        {{- else -}}
+            <img src="{{ $item | safeURL }}" alt="" loading="lazy"
+            {{- with $width }} width="{{.}}"{{end}} {{- with $height }} height="{{.}}"{{end}}
+            class="h-auto max-w-full rounded-lg" />
+        {{- end -}}
+    {{ end}}
+    
+</div>
+{{ end }}

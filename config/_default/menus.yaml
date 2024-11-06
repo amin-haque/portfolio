@@ -26,5 +26,5 @@ main:
   #   url: awards/
   #   weight: 30
   - name: CV
-    url: uploads/resume.pdf
+    url: uploads/Academic_CV_Chowdhury_Ahmed_Hossain.pdf
     weight: 999
