@@ -38,7 +38,6 @@ date_end: 2024-06-30T18:00:00.000Z
 supervisor: Dr. Jane Alam Khan
 project_type: Undergraduate Thesis
 tools:
-  - name: Lammps
 ---
 
 Learned:
