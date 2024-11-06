@@ -4,7 +4,7 @@
   {{ partial "components/sidebar.html" (dict "context" . "no_sidebar" true) }}
   {{ partial "components/toc.html" . }}
   <article class="w-full break-words flex min-h-[calc(100vh-var(--navbar-height))] min-w-0 justify-center pb-8 pr-[calc(env(safe-area-inset-right)-1.5rem)]">
-    <main class="w-full min-w-0 max-w-6xl px-6 pt-4 md:px-12">
+    <main class="w-full px-6 pt-4 md:px-0">
 
       {{ if .Params.show_breadcrumb }}
       <div class="mb-4">
@@ -57,23 +57,17 @@
           <span class="font-semibold">Tools utilized: </span>{{ $output | safeHTML | markdownify }}
         </div>
       {{ end }}
-         
-
       </div>
 
 
       {{/* Abstract */}}
       {{ if .Params.abstract }}
-        <div class="max-w-prose grid grid-cols-1 md:grid-cols-[200px_auto] gap-2 mb-6">
-        {{ if .Params.abstract }}
-          <div class="font-bold text-2xl"> Summary </div>
-          <div>{{ .Params.abstract | markdownify }}</div>
-        {{ end }}
-      </div>
+        <div class="text-justify"><span class="font-bold"> ABSTRACT: </span>{{ .Params.abstract | markdownify }}</div>
       {{ end }}
 
+
       {{/*  Main Content  */}}
-      <div class="mt-24 prose prose-slate lg:prose-xl dark:prose-invert">
+      <div class="mt-24 prose max-w-none prose-slate lg:prose-xl dark:prose-invert">
         {{ .Content }}
       </div>
 
