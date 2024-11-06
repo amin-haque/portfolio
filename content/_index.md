@@ -21,7 +21,7 @@ sections:
           url: mailto:ahmedhossain.buet@gmail.com
         download:
           text: DOWNLOAD MY CV
-          url: uploads/resume.pdf
+          url: uploads/Academic_CV_Chowdhury_Ahmed_Hossain.pdf
     design:
       css_class: light
       background:
