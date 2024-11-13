@@ -9,6 +9,10 @@ title: Chowdhury Ahmed Hossain
 first_name: Chowdhury Ahmed
 last_name: Hossain
 
+avater:
+  # Avater size in px > if 250px by 250x input 250x250
+  size: '300x300'
+
 # Status emoji
 # status:
 #   icon: ☕️
@@ -39,12 +43,13 @@ profiles:
   #   url: https://www.instagram.com/
   - icon: brands/github
     url: https://github.com/ahmed-hossain
+    label: Github profile
   - icon: brands/linkedin
     url: https://www.linkedin.com/chowhury-ahmed
-  # - icon: academicons/google-scholar
-  #   url: https://scholar.google.com/
-  # - icon: academicons/orcid
-  #   url: https://orcid.org/
+    label: Linkedin profile
+  - icon: hero/document
+    url: uploads/Academic_CV_Chowdhury_Ahmed_Hossain.pdf
+    label: View CV
 
 interests:
   - Material Behavior
@@ -81,7 +86,7 @@ education:
 
 test_scores:
   - exam: Graduate Record Exam (GRE)
-    url: https://ets.org
+    url: https://ets.org/gre
     logo: gre.png
     date: 2024-09-16
     score: |

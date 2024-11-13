@@ -14,12 +14,11 @@
   {{ errorf "Could not find an author page at `%s`. Please check the value of `author` in your About widget and create an associated author page if one does not already exist. See https://docs.hugoblox.com/page-builder/#about " $person_page_path }}
 {{end}}
 {{ $person := $person_page.Params }}
-{{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }} 
-{{ $avatar_shape := site.Params.features.avatar.shape | default "circle" }}
-{{ $avatar_size := site.Params.features.avatar.size | default "250x250" }}
+{{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
+{{ $avatar_size := $person.avatar.size | default "300x300" }}
 
 
-<div class="resume-biography px-3 flex flex-col md:flex-row justify-center gap-12">
+<div class="resume-biography px-3 flex flex-col md:flex-row justify-center items-center gap-12 md:h-[calc(100vh-208px)]">
   <div class="flex justify-center items-center min-w-[200px] mx-auto md:mx-0">
 
   {{ $img := "" }}
@@ -112,18 +111,18 @@
     </div>
     {{ end }}
     <div class="flex flex-col md:flex-row gap-6">
+    {{ with $block.content.buttons.download }}
+    <a href="{{.url}}" target="_blank" class="inline-flex intro-btn items-center justify-center px-6 py-2 text-sm font-medium text-primary-900 bg-white border-2 border-primary-900 rounded-full hover:bg-primary-900 hover:text-grey-100 focus:z-10 focus:ring-4 focus:outline-none focus:ring-primary-200 focus:text-primary-700 dark:bg-gray-200 dark:text-gray-700 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+      <svg class="w-4 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 2 20 20">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9ZM11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12Z" fill="currentColor"/>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.83 11.2807C19.542 7.15186 15.8122 5 12 5C8.18777 5 4.45796 7.15186 2.17003 11.2807C1.94637 11.6844 1.94361 12.1821 2.16029 12.5876C4.41183 16.8013 8.1628 19 12 19C15.8372 19 19.5882 16.8013 21.8397 12.5876C22.0564 12.1821 22.0536 11.6844 21.83 11.2807ZM12 17C9.06097 17 6.04052 15.3724 4.09173 11.9487C6.06862 8.59614 9.07319 7 12 7C14.9268 7 17.9314 8.59614 19.9083 11.9487C17.9595 15.3724 14.939 17 12 17Z" fill="currentColor"/>
+      </svg> {{.text}}</a>
+    {{ end }}
     {{ with $block.content.buttons.contact }}
     <a href="{{.url}}" target="_blank" class="inline-flex intro-btn contact-btn items-center justify-center px-6 py-2 text-sm font-medium text-primary-900 bg-white border-2 border-primary-900 rounded-full hover:bg-primary-900 hover:text-grey-100 focus:z-10 focus:ring-4 focus:outline-none focus:ring-primary-200 focus:text-primary-700 dark:bg-gray-200 dark:text-gray-700 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
       <svg class="w-4.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
         <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"></path>
       </svg> {{.text}}</a>
-    {{ end }}
-    {{ with $block.content.buttons.download }}
-    <a href="{{.url}}" target="_blank" class="inline-flex intro-btn items-center justify-center px-6 py-2 text-sm font-medium text-primary-900 bg-white border-2 border-primary-900 rounded-full hover:bg-primary-900 hover:text-grey-100 focus:z-10 focus:ring-4 focus:outline-none focus:ring-primary-200 focus:text-primary-700 dark:bg-gray-200 dark:text-gray-700 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
-      <svg class="w-3.5 h-3.5 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-      <path d="M14.707 7.793a1 1 0 0 0-1.414 0L11 10.086V1.5a1 1 0 0 0-2 0v8.586L6.707 7.793a1 1 0 1 0-1.414 1.414l4 4a1 1 0 0 0 1.416 0l4-4a1 1 0 0 0-.002-1.414Z"/>
-      <path d="M18 12h-2.55l-2.975 2.975a3.5 3.5 0 0 1-4.95 0L4.55 12H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2Zm-3 5a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"/>
-    </svg> {{.text}}</a>
     {{ end }}
     </div>
 

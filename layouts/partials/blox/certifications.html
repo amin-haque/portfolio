@@ -12,7 +12,7 @@
 {{end}}
 {{ $awards := $person_page.Params.awards }}
 
-<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
+<div class="flex flex-col items-center academic-list mx-auto gap-3 justify-center">
 
   <div class="title font-light text-primary-700 dark:text-white">
     {{ $block.content.title | markdownify | emojify }}
@@ -42,7 +42,7 @@
   </div>
 
   {{with .summary}}
-  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose">{{. | markdownify | emojify}}</div>
+  <div class="mb-3 font-normal text-gray-500 dark:text-gray-400 prose max-w-none">{{. | markdownify | emojify}}</div>
   {{end}}
 
   {{ with .certificate_url }}

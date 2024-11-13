@@ -21,7 +21,9 @@ abstract: >-
   maximum projectile velocity.
 date_start: 2022-06-03T18:00:00.000Z
 date_end: 2022-08-23T18:00:00.000Z
-supervisor: Dr. Kazi Arafat Rahman
+supervisor: 
+  name: Dr. Kazi Arafat Rahman
+  url: https://me.buet.ac.bd/faculty/dr-kazi-arafat-rahman-1
 project_type: Electromechanical System Design Project
 # tools:
 #   - name: Solidworks

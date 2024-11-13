@@ -15,7 +15,7 @@
 {{end}}
 {{ $person := $person_page.Params }}
 
-<h1 class="title mb-12 text-center font-light  text-primary-700 dark:text-white">{{ $page.Title }}</h3>
+<h1 class="title text-center font-light  text-primary-700 dark:text-white">{{ $block.content.title }}</h3>
 <div class="flex flex-col items-center academic-list mx-auto">
 <div class="flex flex-col lg:gap-x-6 w-full px-6 sm:px-0">
 {{ if $person.education }}
@@ -23,7 +23,7 @@
     {{/*  <ol class="relative border-s border-gray-200 dark:border-gray-700">  */}}
     <ol class="relative">
       {{ range $idx, $key := $person.education }}
-      <li class="center-mbl flex gap-12 mb-10">
+      <li class="center-mbl flex gap-12">
           {{ if .logo }}
           {{ $logo := ($person_page.Resources.ByType "image").GetMatch (.logo) }} 
           {{ $logo_image := $logo.Fill "150x150 Center" }}
@@ -31,8 +31,10 @@
           width="{{ $logo_image.Width }}" height="{{ $logo_image.Height }}"></a>
           {{ end }}
           <div>
-            <a href="{{ .uni_url }}" target="_blank"><h3 class="flex items-center mb-1 text-3xl font-semibold dark:text-white">{{.area}}</h3></a>
-            <span class="block mt-2 mb-2 text-lg font-normal leading-none text-gray-500 dark:text-gray-300">{{.institution}}</span>
+            <h3 class="flex items-center mb-1 text-3xl font-semibold dark:text-white">{{.area}}</h3>
+            <a href="http://buet.ac.bd" target="_blank">
+              <span class="block mt-2 mb-2 text-lg font-normal leading-none text-gray-500 dark:text-gray-300">{{.institution}}</span>
+            </a>
             <time class="block mb-4 text-md font-normal leading-none text-gray-500 dark:text-gray-300">
               {{ if .date_start }}
                 {{ (time .date_start) | time.Format ($block.design.date_format | default "January 2006") }} –
@@ -64,7 +66,7 @@
 
 {{ if $person.test_scores }}
 <div class="academic w-full">
-  <h3 class="mt-6 mb-12 text-4xl text-center font-light  text-primary-700 dark:text-white">Standardized Test Scores</h3>
+  <h3 class="mt-6 mb-6 text-4xl text-center font-light  text-primary-700 dark:text-white">Standardized Test Scores</h3>
     {{/*  <ol class="relative border-s border-gray-200 dark:border-gray-700">  */}}
     <ol class="relative">
       {{ range $idx, $key := $person.test_scores }}
@@ -77,7 +79,7 @@
         width="{{ $logo_image.Width }}" height="{{ $logo_image.Height }}"></a>
         {{ end }}
         <div>
-          <a href="{{ .url }}" target="_blank"><h3 class="flex items-center mb-1 text-3xl font-semibold dark:text-white">{{.exam}}</h3></a>
+          <h3 class="flex items-center mb-1 text-3xl font-semibold dark:text-white">{{.exam}}</h3>
                     <time class="block mt-2 mb-4 text-md font-normal leading-none text-gray-500 dark:text-gray-300">
                         {{ (time .date) | time.Format ($block.design.date_format | default "January 2006") }}
                     </time>

@@ -14,7 +14,9 @@ abstract: >-
   during crack propagation were observed, and a traction-separation law for cohesive zone modeling was developed from these simulations to integrate atomistic insights into macroscopic fracture models. The computations under the mode I condition show that crack growth, even in the nano-scale single-crystal Co-Ti, is in the form of void nucleation, void growth, and coalescence, similar to ductile fracture at the mesoscale. This information can contribute to the understanding and characterizing of Co-Ti’s mechanical response under the mode-I loading conditions and how fracture will propagate on a molecular level. Moreover, the cohesive traction-separation law modeled in this study based on the traction-separation curve can be used in the macro-scale FEM study to simulate arbitrary crack propagation in the bulk material. 
 date_start: 2023-06-30T18:00:00.000Z
 date_end: 2024-06-30T18:00:00.000Z
-supervisor: Dr. Jane Alam Khan
+supervisor: 
+  name: Dr. Jane Alam Khan
+  url: https://me.buet.ac.bd/faculty/dr-mohammad-jane-alam-khan
 project_type: Undergraduate Thesis
 ---
 

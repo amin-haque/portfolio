@@ -7,3 +7,41 @@
 
   gtag('config', 'G-FPFE8CEQLJ');
 </script>
+
+<script>
+  let currentIndex = 0;
+  let modalImage;
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const galleryItems = document.querySelectorAll("[data-image]");
+    modalImage = document.getElementById("modalImage");
+
+    // Assign click event listeners to gallery items to open modal
+    galleryItems.forEach((item, index) => {
+      item.onclick = () => openModal(item, index);
+    });
+
+    function openModal(element, index) {
+      const imageSrc = element.getAttribute("data-image");
+      modalImage.src = imageSrc;
+      console.log(modalImage.src);
+      currentIndex = index;
+      document.getElementById("modal").style.display = "flex";
+    }
+
+    window.closeModal = function() {
+      document.getElementById("modal").style.display = "none";
+    }
+
+    window.prevImage = function() {
+      currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+      modalImage.src = galleryItems[currentIndex].getAttribute("data-image");
+    }
+
+    window.nextImage = function() {
+      currentIndex = (currentIndex + 1) % galleryItems.length;
+      modalImage.src = galleryItems[currentIndex].getAttribute("data-image");
+    }
+  });
+
+</script>

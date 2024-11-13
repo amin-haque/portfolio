@@ -17,10 +17,21 @@ sections:
       username: admin
       title: Sikkim Tour
       photos:
+        - myself/bmech_picnic.jpg
+        - myself/bsrm.jpg
+        - myself/chadpur.jpg
         - myself/earpiece_3d_print.jpg
-        - myself/earpiece_3d_print.jpg
-        - myself/earpiece_3d_print.jpg
-        - myself/earpiece_3d_print.jpg
+        - myself/energypac.jpg
+        - myself/kaptai.jpg
+        - myself/mechafest.JPG
+        - myself/shapa.jpg
+        - myself/saintmartin_group.jpg
+        - myself/mechafest-2.jpeg
+        - myself/saintmartin_solo.jpg
+        - myself/saintmartin_solo-2.jpg
+        - myself/sikkim_group.jpg
+        - myself/sikkim_solo.jpg
+        - myself/srimangal.jpg 
     design:
       date_format: 'January 2006'
 ---

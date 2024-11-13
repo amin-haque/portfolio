@@ -40,7 +40,7 @@
 
         {{ if .Params.supervisor }}
         <div class="mt-3 text-gray-700 dark:text-gray-300 text-md md:text-lg">
-          <span class="font-semibold">Supervised by: </span> {{ .Params.supervisor }}
+          <span class="font-semibold">Supervised by: </span> <a href="{{ .Params.supervisor.url }}" target="_blank">{{ .Params.supervisor.name }}</a>
         </div>
         {{end}}
 

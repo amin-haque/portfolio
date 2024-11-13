@@ -20,6 +20,9 @@
 
 {{ if $person.work }}
 <div class="academic w-full">
+  <div class="title text-center font-light text-primary-700 dark:text-white">
+    {{ $block.content.title | markdownify | emojify }}
+  </div>
   {{ range $idx, $key := $person.work }}
   <h3 class="mt-6 mb-12 text-4xl text-center font-light  text-primary-700 dark:text-white">{{.type}}</h3>
     {{ range .items }}

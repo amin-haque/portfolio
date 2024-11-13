@@ -7,8 +7,8 @@ main:
   - name: Home
     url: /
     weight: 10
-  - name: Academics
-    url: academics/
+  - name: Qualifications
+    url: qualifications/
     weight: 11
   - name: Research
     url: research/
@@ -16,12 +16,6 @@ main:
   - name: Projects
     url: projects/
     weight: 13
-  - name: Experience
-    url: experience/
-    weight: 14
-  - name: Skills & Certifications
-    url: skills/
-    weight: 15
   # - name: Awards and honors
   #   url: awards/
   #   weight: 30
