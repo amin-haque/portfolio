@@ -1,17 +1,17 @@
 ---
 # Display name
-title: Chowdhury Ahmed Hossain
+title: Md Amin Haque
 
 # Name pronunciation (optional)
 # name_pronunciation: Chien Shiung Wu
 
 # Full name (for SEO)
-first_name: Chowdhury Ahmed
-last_name: Hossain
+first_name: Md Amin
+last_name: Haque
 
 avater:
   # Avater size in px > if 250px by 250x input 250x250
-  size: '300x300'
+  size: '2400x2400'
 
 # Status emoji
 # status:
@@ -35,17 +35,17 @@ role: Prospective PhD Student - Fall 2025
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: hero/envelope
-    url: 'mailto:ahmedhossain.buet@gmail.com'
+    url: 'mailto:haqueamin99@gmail.com'
     label: E-mail Me
   # - icon: brands/x
   #   url: https://twitter.com/GetResearchDev
   # - icon: brands/instagram
   #   url: https://www.instagram.com/
   - icon: brands/github
-    url: https://github.com/ahmed-hossain
+    url: https://github.com/amin-haque
     label: Github profile
   - icon: brands/linkedin
-    url: https://www.linkedin.com/chowhury-ahmed
+    url: https://www.linkedin.com/in/amin-haque/
     label: Linkedin profile
   - icon: hero/document
     url: uploads/Academic_CV_Chowdhury_Ahmed_Hossain.pdf
@@ -65,7 +65,7 @@ education:
     logo: buet.png
     date_start: 2019-04-29
     date_end: 2024-07-01
-    cgpa: 3.48/4.0
+    cgpa: 3.57/4.00
     summary: |
       ## Relevant Coursework:
       - Composite Materials
@@ -91,9 +91,9 @@ test_scores:
     date: 2024-09-16
     score: |
       - Overall Score: 331/340
-      - Quantitative Reasoning: 168/170 (83<sup>rd</sup> percentile)
-      - Verbal Reasoning: 163/170 (91<sup>st</sup> percentile)
-      - Analytical Writing: 3.5/6 (42<sup>nd</sup> percentile)
+      - Quantitative Reasoning: 165/170 (70<sup>th</sup> percentile)
+      - Verbal Reasoning: 157/170 (73<sup>rd</sup> percentile)
+      - Analytical Writing: 5.0/6.0 (92<sup>nd</sup> percentile)
     # button:
     #   url: /uploads/gre_score.pdf
     #   text: View Score Report
@@ -102,8 +102,8 @@ test_scores:
     logo: ielts.png
     date: 2024-10-26
     score: |
-      - Overall Score: 8.0
-      - Listening: 9.0 &emsp; Reading: 8.5 &emsp; Writing: 6.5 &emsp; Speaking: 7.0
+      - Overall Score: 8.5
+      - Listening: 8.5 &emsp; Reading: 9.0 &emsp; Writing: 8.0 &emsp; Speaking: 7.5
 
 work:
   - type: Industrial Attachments
