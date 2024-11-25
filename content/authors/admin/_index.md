@@ -48,7 +48,7 @@ profiles:
     url: https://www.linkedin.com/in/amin-haque/
     label: Linkedin profile
   - icon: hero/document
-    url: uploads/Academic_CV_Chowdhury_Ahmed_Hossain.pdf
+    url: uploads/CV_Md Amin Haque.pdf
     label: View CV
 
 interests:
